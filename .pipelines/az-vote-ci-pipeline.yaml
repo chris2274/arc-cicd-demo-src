@@ -6,7 +6,11 @@ trigger:
       - master
 variables:
   - group: az-vote-app-dev
-
+resources:
+  repositories:
+    - repository: Manifest
+      type: git
+      name: arc-cicd-demo-src      
 pool:
   vmImage: ubuntu-latest
 
